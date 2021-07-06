@@ -117,3 +117,8 @@ if ! shopt -oq posix; then
 fi
 
 eval "$(starship init bash)"
+
+
+#ALIASES
+alias update="sudo apt upgrade"
+alias install="sudo apt install"
