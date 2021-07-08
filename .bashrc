@@ -122,3 +122,4 @@ eval "$(starship init bash)"
 #ALIASES
 alias update="sudo apt upgrade"
 alias install="sudo apt install"
+alias reboot="sudo reboot"
