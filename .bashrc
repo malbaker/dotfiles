@@ -123,3 +123,5 @@ eval "$(starship init bash)"
 alias update="sudo apt upgrade"
 alias install="sudo apt install"
 alias reboot="sudo reboot"
+
+alias code="snap run code"
