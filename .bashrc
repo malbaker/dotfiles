@@ -1,1 +1,1 @@
-./.bashrc
+/home/mbaker/.bashrc
