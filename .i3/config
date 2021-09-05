@@ -55,8 +55,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -144,9 +144,9 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 1:WEB
-set $ws2 2:DEV
-set $ws3 3:SOC
+set $ws1 1
+set $ws2 2
+set $ws3 3
 set $ws4 4
 set $ws5 5
 set $ws6 6
@@ -303,22 +303,23 @@ exec_always --no-startup-id fix_xcursor
 # Same logic applied to everything else.
 set_from_resource $term_background background
 set_from_resource $term_foreground foreground
-set_from_resource $term_color0     color0
-set_from_resource $term_color1     color1
-set_from_resource $term_color2     color2
-set_from_resource $term_color3     color3
-set_from_resource $term_color4     color4
-set_from_resource $term_color5     color5
-set_from_resource $term_color6     color6
-set_from_resource $term_color7     color7
-set_from_resource $term_color8     color8
-set_from_resource $term_color9     color9
-set_from_resource $term_color10    color10
-set_from_resource $term_color11    color11
-set_from_resource $term_color12    color12
-set_from_resource $term_color13    color13
-set_from_resource $term_color14    color14
-set_from_resource $term_color15    color15
+set_from_resource $term_color0     color0  #3b4252
+set_from_resource $term_color1     color1  #bf616a
+set_from_resource $term_color2     color2  #a3be8c
+set_from_resource $term_color3     color3  #ebcb8b
+set_from_resource $term_color4     color4  #81a1c1
+set_from_resource $term_color5     color5  #b48ead
+set_from_resource $term_color6     color6  #88c0d0
+set_from_resource $term_color7     color7  #e5e9f0
+
+set_from_resource $term_color8     color8  #4c566a
+set_from_resource $term_color9     color9  #bf616a
+set_from_resource $term_color10    color10 #a3be8c
+set_from_resource $term_color11    color11 #ebcb8b
+set_from_resource $term_color12    color12 #81a1c1
+set_from_resource $term_color13    color13 #b48ead
+set_from_resource $term_color14    color14 #8fbcbb
+set_from_resource $term_color15    color15 #eceff4
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
